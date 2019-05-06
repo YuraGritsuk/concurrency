@@ -1,0 +1,36 @@
+* При выполнении заданий желательно писать код, совместимый как с 2, так и с 3 версией python.
+* При сборе данных для анализа стоит запустить все вычисления хотя бы 3 раза.
+
+Задание 1:
+- Реализовать функцию итеративного (в цикле, без рекурсии) подсчета факториала заданного числа.
+- Подобрать такой базис факториала, чтобы время исполнения было заметно (около секунды).
+- Реализовать функции подсчета факториала CPU_CORES_COUNT + 1 раз тремя различными способами:
+  - последовательно;
+  - параллельно, используя CPU_CORES_COUNT + 1 потоков (threads);
+  - параллельно, используя CPU_CORES_COUNT + 1 процессов (processes).
+- Запустить вычисления всеми способами на 2 и 3 питоне и подсчитать время выполнения каждого из них.
+- Проанализировать результаты.
+
+Задание 2:
+- Аналогично заданию 1, вместо функции вычисления факториала использовать time.sleep(1).
+
+Задание 3:
+- Реализовать функцию скачивания ресурса, расположенного по перереданному URL, по HTTP (смотри модуль requests).
+- Реализовать функции скачивания ресурсов из предоставленной коллекции URL тремя различными способами:
+  - последовательно;
+  - параллельно, используя CPU_CORES_COUNT + 1 потоков (threads);
+  - параллельно, используя CPU_CORES_COUNT + 1 процессов (processes).
+- Запустить загрузку следующего списка ресурсов всеми способами на 2 и 3 питоне и подсчитать время выполнения каждого из них:
+  - http://www.sample-videos.com/video/mp4/720/big_buck_bunny_720p_2mb.mp4;
+  - http://www.sample-videos.com/video/mp4/480/big_buck_bunny_480p_2mb.mp4;
+  - http://www.sample-videos.com/video/mp4/360/big_buck_bunny_360p_2mb.mp4;
+  - http://www.sample-videos.com/video/mp4/240/big_buck_bunny_240p_2mb.mp4;
+  - http://www.sample-videos.com/video/flv/720/big_buck_bunny_720p_2mb.mp4;
+  - http://www.sample-videos.com/video/flv/480/big_buck_bunny_480p_2mb.mp4;
+  - http://www.sample-videos.com/video/flv/360/big_buck_bunny_360p_2mb.mp4;
+  - http://www.sample-videos.com/video/flv/240/big_buck_bunny_240p_2mb.mp4;
+  - http://www.sample-videos.com/video/mkv/720/big_buck_bunny_720p_2mb.mp4;
+  - http://www.sample-videos.com/video/mkv/480/big_buck_bunny_480p_2mb.mp4;
+  - http://www.sample-videos.com/video/mkv/360/big_buck_bunny_360p_2mb.mp4;
+  - http://www.sample-videos.com/video/mkv/240/big_buck_bunny_240p_2mb.mp4.
+- Проанализировать результаты.
